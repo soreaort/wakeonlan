@@ -2,6 +2,9 @@
 
 PROVISIONING_PATH="/usr/lib/python3/dist-packages/provisioningserver/"
 
+echo "Installing wakeonlan"
+apt-get install -y wakeonlan
+
 echo "Copying wakeonlan.py..."
 cp -vf wakeonlan.py ${PROVISIONING_PATH}drivers/power/wakeonlan.py
 
